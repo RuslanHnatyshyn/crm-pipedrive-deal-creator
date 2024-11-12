@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/form.css" />
+    <script defer src="../scripts/form.js"></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <form class="form" action="" method="post">
+      <div class="form__client-details">
+        <h2 class="form__title">Client details</h2>
+        <div class="form__input-names">
+          <input
+            class="form__input-name"
+            type="text"
+            name="first_name"
+            placeholder="First name"
+            aria-label="First name"
+            required
+          />
+          <input
+            class="form__input-last-name"
+            type="text"
+            name="last_name"
+            placeholder="Last name"
+            aria-label="Last name"
+            required
+          />
+        </div>
+        <input
+          class="form__phone"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          aria-label="Phone"
+          required
+        />
+        <input
+          class="form__email"
+          type="email"
+          name="email"
+          placeholder="Email (optional)"
+          aria-label="Email (optional)"
+        />
+      </div>
+
+      <div class="form__job-details">
+        <h2 class="form__title">Job details</h2>
+        <div class="form__job-selection">
+          <select
+            class="selection-details"
+            name="job_details"
+            aria-label="Job details"
+            required
+          >
+            <option value="">Job details</option>
+            <option value="full-time">Full time</option>
+            <option value="part-time">Part time</option>
+            <option value="freelance">Freelance</option>
+            <option value="internship">Internship</option>
+          </select>
+          <select
+            class="selection-source"
+            name="job_source"
+            aria-label="Job source"
+            required
+          >
+            <option value="">Job source</option>
+            <option value="website">Website</option>
+            <option value="referral">Referral</option>
+            <option value="social-media">Social media</option>
+            <option value="headhunter">Headhunter</option>
+          </select>
+        </div>
+        <textarea
+          class="job-description"
+          name="job_description"
+          type="text"
+          placeholder="Job description (optional)"
+          aria-label="Job description (optional)"
+        ></textarea>
+      </div>
+
+      <div class="form__service-location">
+        <h2 class="form__title">Service location</h2>
+        <input
+          class="service-location__address"
+          type="text"
+          name="address"
+          placeholder="Address"
+          aria-label="Address"
+          required
+        />
+        <input
+          class="service-location__city"
+          type="text"
+          name="city"
+          placeholder="City"
+          aria-label="City"
+          required
+        />
+        <input
+          class="service-location__state"
+          type="text"
+          name="state"
+          placeholder="State"
+          aria-label="State"
+          required
+        />
+        <div class="form__address-details">
+          <input
+            class="zip_code"
+            type="number"
+            name="zip_code"
+            placeholder="Zip code"
+            aria-label="Zip code"
+            required
+          />
+          <select class="area" name="area" aria-label="Area" required>
+            <option value="">Area</option>
+            <option value="north">North</option>
+            <option value="south">South</option>
+            <option value="east">East</option>
+            <option value="west">West</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form__scheduled">
+        <h2 class="form__title">Scheduled</h2>
+        <input
+          class="start-date"
+          type="date"
+          name="date"
+          aria-label="Start date"
+        />
+        <div class="form__scheduled-time">
+          <input
+            class="start-time"
+            type="time"
+            name="start_time"
+            placeholder="Start time"
+            aria-label="Start time"
+          />
+          <input
+            class="end-time"
+            type="time"
+            name="end_time"
+            placeholder="End time"
+            aria-label="End time"
+          />
+        </div>
+        <select
+          class="schedule-option"
+          name="test_select"
+          aria-label="Test select"
+        >
+          <option value="">Select an option</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+          <option value="option4">Option 4</option>
+        </select>
+      </div>
+
+      <div class="form__buttons">
+        <button class="create-btn" type="submit">Create deal</button>
+        <button class="save-btn" type="button">Save info</button>
+      </div>
+    </form>
+  </body>
+</html>

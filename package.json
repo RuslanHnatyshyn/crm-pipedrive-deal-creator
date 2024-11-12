@@ -1,0 +1,14 @@
+{
+  "name": "pipedrive",
+  "version": "1.0.0",
+  "description": "test task salesautomators",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ruslan",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.80.6"
+  }
+}
